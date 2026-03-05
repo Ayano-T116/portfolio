@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.6;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #F4F9FF;
+}
+
+#container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.inner {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto 60px;
+}
+
+.sectionTitle{
+    font-size: 18px;
+    margin-bottom: 17px;
+}
+
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header{
+    margin-top: 60px;
+}
+
+#header #logo {
+    margin-bottom: 15px;
+    width: 160px;
+    height: 18px;
+}
+
+#header #mainVisual{
+    width: 100%;
+    max-width: 1000px;
+}
+
+/*-------------------------------------------
+INDEXセクション
+-------------------------------------------*/
+
+#indexOutline{
+    background-color: white;
+    max-width: 1000px;
+}
+
+#index{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#index li{
+    list-style-position: inside;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------------------
+DETAILセクション
+-------------------------------------------*/
+
+#detailContents{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+#detail img{
+    width: 270px;
+    height: 270px;
+}
+
+#detailText{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#detail h3{
+    font-size: 18px;
+}
+
+#detail dl{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding: 20px 0px;
+}
+
+#detail dt{
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+#detail dd{
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+#detail a{
+    width: fit-content;
+    border-bottom: 1px solid #333333;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer{
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+
+/*-------------------------------------------
+レスポンシブ対応
+-------------------------------------------*/
+@media screen and (max-width:1024px) {
+
+    #detailContents{
+    flex-direction: column;
+}
+
+
+    
+}
+
