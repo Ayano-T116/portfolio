@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    padding-bottom: 80px;
+}
+
+/*-------------------------------------------
+メイン mainVisuセクション
+-------------------------------------------*/
+#mainVisu {
+    height: 100%;
+}
+
+/*-------------------------------------------
+メイン introセクション
+-------------------------------------------*/
+#intro {
+    width: 575px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#introTitle {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/*-------------------------------------------
+メイン detailセクション
+-------------------------------------------*/
+
+#detailVisu {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+#detailVisu li {
+    width: calc(100%/3);
+}
+
+#detailVisu li img {
+    height: 500px;
+    width: 100%;
+}
+
+#detailLink {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#detailLink a {
+    display: inline-block;
+    border: 1px solid #333333;
+    padding: 18px 60px;
+    font-size: 14px;
+}
+
+
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+    width: 183px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#snsLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+#snsLinks a {
+    text-decoration-line: underline;
+}
+
+
+/*-------------------------------------------
+レスポンシブ対応
+-------------------------------------------*/
+@media screen and (max-width:834px) {
+
+    #detailVisu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #detailVisu li {
+    width: 100%;
+}
+}

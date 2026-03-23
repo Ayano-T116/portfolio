@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.inner {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto 60px;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    margin-bottom: 37px;
+}
+
+.sectionGray {
+    background-color: #f5f5f5;
+    padding: 65px 60px 60px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header div {
+    margin-top: 60px;
+}
+
+#logo {
+    width: 180px;
+    height: 18px;
+    margin-bottom: 15px;
+}
+
+#mainVisual {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    object-fit: contain;
+}
+
+/*-------------------------------------------
+メイン　indexセクション
+-------------------------------------------*/
+#index {
+    background-color: #f5f5f5;
+    padding: 65px 60px 60px;
+}
+
+#index ol {
+    border: 1px solid #333;
+    padding-top: 30px;
+}
+
+#index li {
+    list-style-position: inside;
+    margin-bottom: 30px;
+}
+
+
+/*-------------------------------------------
+メイン　photosセクション
+-------------------------------------------*/
+#photos img {
+    width: 392px;
+    height: 261px;
+}
+
+
+/*-------------------------------------------
+メイン　detailセクション
+-------------------------------------------*/
+#detailContent {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-align: start;
+}
+
+#detailContent dl {
+    width: 237px;
+    border-right: 1px solid #333333;
+}
+
+#detailContent dt {
+    font-weight: bold;
+}
+
+#detailContent dd {
+    margin-bottom: 19px;
+}
+
+#detailContent p {
+    margin-bottom: 30px;
+}
+
+#detailContent a {
+    border-bottom: 1px solid #333333;
+    padding-bottom: 2px;
+}
+
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer p {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+
+/*-------------------------------------------
+レスポンシブ対応
+-------------------------------------------*/
+@media screen and (max-width:1024px) {
+
+    .sectionGray {
+        /* background-color: #f5f5f5; */
+        padding: 45px 20px 40px;
+    }
+
+    #mainvisual {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #detailContent {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        text-align: start;
+    }
+
+    #detailContent dl {
+        width: 100%;
+        padding-bottom: 45px;
+        border-right: none;
+        border-bottom: 1px solid #333333;
+    }
+
+
+
+}
