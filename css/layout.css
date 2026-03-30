@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bolder;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+
+#headerTitle {
+    font-size: 2rem;
+    color: green;
+    border-bottom: 2px solid brown;
+    padding-bottom: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+/*-------------------------------------------
+main
+-------------------------------------------*/
+#mainVisu img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+#mainContent {
+    padding: 20px;
+    border-left: 5px solid brown;
+    background-color: oldlace;
+    margin-bottom: 30px;
+}
+
+#mainContent h2 {
+    font-size: 1.5rem;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+#mainContent p {
+    margin-bottom: 10px;
+}
+
+#mainContent ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+#mainContent li {
+    background-color: bisque;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 8px;
+}
+
+#mainContent li a {
+    display: block;
+    padding: 15px 0;
+}
+
+#mainContent li:hover {
+    background-color: #ffd1a4; /* ホバーで色を変えると「押せる感」が出る */
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footerContent {
+    background-color: azure;
+    max-width: 300px;
+    font-size: 0.8rem;
+    text-align: center;
+}
