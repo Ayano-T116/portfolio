@@ -16,9 +16,10 @@ ul {
     list-style: none;
 }
 
-a {
+a{
     text-decoration: none;
-    color: #333333;
+    color: brown;
+    font-weight: bolder;
 }
 
 .wrapper {
@@ -42,7 +43,7 @@ header
 /*-------------------------------------------
 main
 -------------------------------------------*/
-#mainVisual img {
+#mainVisu img {
     width: 100%;
     max-height: 250px;
     object-fit: cover;
@@ -61,111 +62,39 @@ main
     margin-bottom: 10px;
 }
 
-.mainContentText {
+#mainContent p {
     margin-bottom: 10px;
 }
 
-/*-------------------------------------------
-main worksList
--------------------------------------------*/
-#worksList {
+#mainContent ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 
 }
 
-#worksList li {
+#mainContent li {
     background-color: bisque;
     text-align: center;
     line-height: 1.5;
     border-radius: 8px;
-    padding: 20px;
 }
 
-#worksList h3 {
-    font-size: 1.2rem;
-    color: brown;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.listContents {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
-    margin-bottom: 20px;
-    place-items: center;
-}
-
-.worksImage {
-    width: 100%;
-    height: 200px;
-    margin: auto;
-
-}
-
-.worksButton {
+#mainContent li a {
     display: block;
-    padding: 15px;
-    background-color: #f7c18b;
-    border-radius: 8px;
+    padding: 15px 0;
 }
 
-#worksList a:hover {
-    background-color: #f9b066;
-    transition: 0.3s;
-}
-
-#worksList h4 {
-    margin-bottom: 5px;
-}
-
-.listText {
-    text-align: left;
-    font-size: 0.9rem;
+#mainContent li:hover {
+    background-color: #ffd1a4; /* ホバーで色を変えると「押せる感」が出る */
 }
 
 /*-------------------------------------------
 footer
 -------------------------------------------*/
 #footerContent {
-    max-width: fit-content;
+    background-color: azure;
+    max-width: 300px;
     font-size: 0.8rem;
     text-align: center;
-}
-
-#footerContent p {
-    margin-bottom: 5px;
-}
-
-#footerContent a {
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-/*-------------------------------------------
-レスポンシブ対応
--------------------------------------------*/
-@media screen and (max-width:767px) {
-
-    #worksList {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-    }
-
-    .worksButton {
-        width: 200px;
-        
-    }
-}
-
-@media screen and (max-width:580px) {
-
-    .worksButton {
-        width: 100%;
-        
-    }
 }
