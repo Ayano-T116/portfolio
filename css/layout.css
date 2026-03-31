@@ -16,10 +16,9 @@ ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #333333;
-    /*font-weight: bolder; */
 }
 
 .wrapper {
@@ -43,7 +42,7 @@ header
 /*-------------------------------------------
 main
 -------------------------------------------*/
-#mainVisu img {
+#mainVisual img {
     width: 100%;
     max-height: 250px;
     object-fit: cover;
@@ -66,14 +65,17 @@ main
     margin-bottom: 10px;
 }
 
-#mainContent ul {
+/*-------------------------------------------
+main worksList
+-------------------------------------------*/
+#worksList {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 
 }
 
-#mainContent li {
+#worksList li {
     background-color: bisque;
     text-align: center;
     line-height: 1.5;
@@ -81,14 +83,14 @@ main
     padding: 20px;
 }
 
-#mainContent h3 {
+#worksList h3 {
     font-size: 1.2rem;
     color: brown;
     margin-bottom: 15px;
     text-align: left;
 }
 
-.listContents{
+.listContents {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
@@ -96,11 +98,11 @@ main
     place-items: center;
 }
 
-#mainContent img {
+.worksImage {
     width: 100%;
     height: 200px;
     margin: auto;
-    
+
 }
 
 .worksButton {
@@ -110,15 +112,16 @@ main
     border-radius: 8px;
 }
 
-#mainContent a:hover {
-    background-color: #f9b066; 
+#worksList a:hover {
+    background-color: #f9b066;
+    transition: 0.3s;
 }
 
-#mainContent h4{
+#worksList h4 {
     margin-bottom: 5px;
 }
 
-.listText{
+.listText {
     text-align: left;
     font-size: 0.9rem;
 }
@@ -127,8 +130,42 @@ main
 footer
 -------------------------------------------*/
 #footerContent {
-    background-color: azure;
-    max-width: 300px;
+    max-width: fit-content;
     font-size: 0.8rem;
     text-align: center;
+}
+
+#footerContent p {
+    margin-bottom: 5px;
+}
+
+#footerContent a {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/*-------------------------------------------
+レスポンシブ対応
+-------------------------------------------*/
+@media screen and (max-width:767px) {
+
+    #worksList {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .worksButton {
+        width: 200px;
+        
+    }
+}
+
+@media screen and (max-width:580px) {
+
+    .worksButton {
+        width: 100%;
+        
+    }
 }
