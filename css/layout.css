@@ -62,7 +62,13 @@ main
 }
 
 .mainContentText {
+    line-height: 1.6;
     margin-bottom: 10px;
+}
+
+.mainContentText a {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /*-------------------------------------------
@@ -86,15 +92,28 @@ main worksList
 #worksList h3 {
     font-size: 1.2rem;
     color: brown;
-    margin-bottom: 15px;
     text-align: left;
+}
+
+.listText {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.listText p {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-weight: bold;
 }
 
 .listContents {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     place-items: center;
 }
 
@@ -121,10 +140,7 @@ main worksList
     margin-bottom: 5px;
 }
 
-.listText {
-    text-align: left;
-    font-size: 0.9rem;
-}
+
 
 /*-------------------------------------------
 footer
@@ -137,11 +153,6 @@ footer
 
 #footerContent p {
     margin-bottom: 5px;
-}
-
-#footerContent a {
-    font-weight: bold;
-    font-size: 0.9rem;
 }
 
 /*-------------------------------------------
