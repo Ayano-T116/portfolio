@@ -11,16 +11,16 @@ html {
 }
 
 /*-------------------------------------------
-メイン
+メイン 一覧ボタン
 -------------------------------------------*/
 
-.allRecipeLink {
+.common-allRecipeLink {
     margin: 0 auto;
     margin-bottom: 100px;
     text-align: center;
 }
 
-.allRecipeLink a {
+.common-allRecipeLink a {
     display: inline-block;
     border: 1px solid #2B2A27;
     padding: 18px 60px;
@@ -31,7 +31,7 @@ html {
 /*-------------------------------------------
 フッター
 -------------------------------------------*/
-.footer {
+.common-footer {
     width: 183px;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -39,7 +39,7 @@ html {
     text-align: center;
 }
 
-.snsLinks {
+.common-snsLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -47,7 +47,7 @@ html {
     list-style: none;
 }
 
-.snsLinks a {
+.common-snsLinks a {
     text-decoration-line: underline;
     color: #2B2A27;
 }
