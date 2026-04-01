@@ -1,0 +1,53 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #2B2A27;
+    line-height: 1.6;
+    font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+}
+
+/*-------------------------------------------
+メイン
+-------------------------------------------*/
+
+.allRecipeLink {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.allRecipeLink a {
+    display: inline-block;
+    border: 1px solid #2B2A27;
+    padding: 18px 60px;
+    font-size: 14px;
+    color: #2B2A27;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+.footer {
+    width: 183px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.snsLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.snsLinks a {
+    text-decoration-line: underline;
+    color: #2B2A27;
+}

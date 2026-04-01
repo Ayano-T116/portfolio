@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+
+/*共通部はcommon.cssに記載*/
+
+
+.wrapper {
+    padding-bottom: 80px;
+}
+
+.inner {
+    margin-bottom: 40px;
+}
+
+.borderDotted{
+    border-bottom: 1px dotted #CCCCCC;
+    padding: 6px 0;
+}
+
+/*-------------------------------------------
+メイン 
+-------------------------------------------*/
+#mainContent {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+/*-recipeVisualセクション-*/
+
+#recipeVisual {
+    width: 50%;
+}
+
+#recipeVisual img {
+    height: 700px;
+    width: 100%;
+}
+
+/*-textsセクション-*/
+
+#texts {
+    width: 50%;
+    padding: 40px 60px 0px;
+}
+
+#texts h1 {
+    font-size: 1.75rem;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+#texts h2{
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 20px;
+}
+
+#texts dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#texts dt{
+    width: 80%;
+}
+
+#texts dd{
+    width: 20%;
+    text-align: end;
+}
+
+#texts ol{
+    padding-left: 20px;
+}
+
+
+/*allRecipeLink ※common.cssに記載*/
+
+
+/*-------------------------------------------
+フッター ※common.cssに記載
+-------------------------------------------*/
+
+
+/*-------------------------------------------
+レスポンシブ対応
+-------------------------------------------*/
+@media screen and (max-width:834px) {
+
+    #mainContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #recipeVisual {
+        width: 100%;
+    }
+
+    #texts {
+        width: 100%;
+    }
+
+
+}
