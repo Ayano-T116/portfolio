@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/script.js" defer></script>
+
 </head>
 
 <body>
@@ -22,12 +22,39 @@
             <img src="image/mainVisual.jpg" alt="ポートフォリオのメインビジュアル">
         </section>
 
-        <section id="mainContent" class="wrapper">
+        <section id="inventoryApp" class="wrapper contents">
+            <h2>在庫管理アプリ</h2>
+            <p class="mainContentText">
+                個人事業主の家族のためにシンプルな在庫管理アプリを作成しました。<br>
+                制作したコードの中身は
+                <a class="mainContentText-a" href="https://github.com/Ayano-T116/inventory_app" target="_blank">こちら</a>
+                からご確認いただけます。
+            </p>
+            <div id="inventoryAppContent" class="worksList-li">
+                <div class="listText">
+                    <h4>＜使用言語＞</h4>
+                    <p class="listText-p">HTML / CSS / JavaScript</p>
+                    <h4>＜工夫した点＞</h4>
+                    <p class="listText-p">
+                        ユーザー(家族)へのヒアリングを重ね、ITに詳しくなくても直感的に操作できるようなUIにしました。<br>
+                        開発効率を上げるためにAIによるコーディングも取り入れました。<br>
+                        デプロイやバックエンドの実装は行わず、フロントエンドのみで完結させることで、シンプルな構成にしました。
+                    </p>
+                </div>
+                <a class="worksButton" href="https://inventory-app-demo-sooty.vercel.app/" target="_blank">
+                    <img class="worksImage" src="image/inventory-app.png" alt="在庫管理アプリのイメージ画像">
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="CodeJump" class="wrapper contents">
             <h2>Works_CodeJump</h2>
             <p class="mainContentText">
                 CodeJumpでデザインカンプをコーディングしました。<br>
                 制作したコードの中身は
-                <a href="https://github.com/Ayano-T116/portfolio" target="_blank">こちら</a>
+                <a class="mainContentText-a" href="https://github.com/Ayano-T116/portfolio" target="_blank">こちら</a>
                 からご確認いただけます。
             </p>
 
@@ -44,6 +71,7 @@
 
     </footer>
 
+    <script type="module" src="javascript/script.js"></script>
 </body>
 
 </html>
