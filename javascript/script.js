@@ -14,16 +14,20 @@ works.forEach(
                 <p class="description" >${work.description}</p>
             </div>
             <div class="listContents">
-                <div><img class="worksImage" src="image/${work.workname}.png" alt="${work.workname}"></div>
-                <div><a class="worksButton" href="works_CodeJump/${work.workname}/" target="_blank">show page</a></div>
+                <a class="worksButton" href="works_CodeJump/${work.workname}/" target="_blank">
+                    <img class="worksImage" src="image/${work.workname}.png" alt="${work.workname}">
+                </a>
+                <!--<div><img class="worksImage" src="image/${work.workname}.png" alt="${work.workname}"></div>
+                <div><a class="worksButton" href="works_CodeJump/${work.workname}/" target="_blank">show page</a></div>-->
             </div>
             <div class="listText">
                 <h4>＜使用言語＞</h4>
-                    <p>${work.languages}</p>
+                    <p class="listText-p">${work.languages}</p>
                 <h4>＜工夫した点＞</h4>
-                    <p>${work.text}</p>
+                    <p class="listText-p">${work.text}</p>
             </div>
         `;
+        li.className = 'worksList-li';
         list.appendChild(li);
     }
 );
