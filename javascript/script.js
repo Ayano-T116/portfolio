@@ -17,8 +17,6 @@ works.forEach(
                 <a class="worksButton" href="works_CodeJump/${work.workname}/" target="_blank">
                     <img class="worksImage" src="image/${work.workname}.png" alt="${work.workname}">
                 </a>
-                <!--<div><img class="worksImage" src="image/${work.workname}.png" alt="${work.workname}"></div>
-                <div><a class="worksButton" href="works_CodeJump/${work.workname}/" target="_blank">show page</a></div>-->
             </div>
             <div class="listText">
                 <h4>＜使用言語＞</h4>
