@@ -97,6 +97,9 @@ main
     gap: 160px;
 }
 
+
+/*---news---*/
+
 .newsContents{
     margin-bottom: 20px;
 }
@@ -131,6 +134,9 @@ main
     overflow: hidden;
     border-left: 1px solid #333333;
 }
+
+
+/*---products---*/
 
 .products{
     width: 65%;
@@ -194,4 +200,49 @@ main
 #products2 .productsImageContents p{
     right: -20px;
     background-color: #952A2660;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 80px 80px 30px 30px;
+    width: 100%;
+}
+
+#footer a {
+    color: #ffffff;
+}
+
+#footer small {
+    display: block;
+    width: fit-content;
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+.footerContents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.address{
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navigationLinks{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
 }
