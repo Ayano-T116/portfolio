@@ -140,7 +140,6 @@ main
     display: flex;
     flex-direction: row;
     gap:18px;
-    padding-left: 20px;
 }
 
 .productsTitle{
@@ -165,16 +164,34 @@ main
 .productsImageContents p{
     position: absolute;
     bottom: -20px;
-    left: -20px;
     writing-mode:horizontal-tb;
     font-size: 16px;
     color: #ffffff;
     text-align: center;
     padding: 50px 0px;
     width: 56%;
-    background-color: #F9E90670;
 }
 
 #products1 .productsTitleContents{
     padding-left: 20px;
+}
+
+#products1 .productsImageContents p{
+    left: -20px;
+    background-color: #F9E90660;
+}
+
+#products2{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: auto;
+}
+
+#products2 .productsTitleContents{
+    padding-right: 20px;
+}
+
+#products2 .productsImageContents p{
+    right: -20px;
+    background-color: #952A2660;
 }
