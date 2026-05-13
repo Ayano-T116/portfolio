@@ -30,22 +30,16 @@ a {
 header
 -------------------------------------------*/
 #header {
-    position: relative;
-}
-
-#mainVisual {
     width: 100%;
+    background-image: url("../images/mainvisual-pc.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .headerContents {
     width: 100%;
     height: 100%;
     padding: 60px 80px 30px 40px;
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
     display: flex;
     flex-direction: column;
@@ -56,7 +50,7 @@ header
     align-self: flex-start;
 }
 
-.headerNavigationLinks{
+.headerNavigationLinks {
     margin-right: 60px;
     display: flex;
     flex-direction: column;
@@ -68,7 +62,7 @@ header
     background-color: #333333;
 }
 
-.headerStoreLink{
+.headerStoreLink {
     padding: 30px 15px;
     margin: 8px;
     border: 1px solid #CCCCCC;
@@ -83,7 +77,7 @@ header
 main
 -------------------------------------------*/
 
-#main{
+#main {
     background-color: #E6E2D7;
 }
 
@@ -100,35 +94,35 @@ main
 
 /*---news---*/
 
-.newsContents{
+.newsContents {
     margin-bottom: 20px;
 }
 
-.newsList{
+.newsList {
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 80px 100px 0 0;
 }
 
-#news h2{
+#news h2 {
     font-size: 36px;
 }
 
-#news p{
+#news p {
     font-size: 14px;
     margin-left: 15px;
 }
 
-#news dt{
+#news dt {
     padding: 15px 30px 0px 5px;
 }
 
-.firstDt{
+.firstDt {
     border-right: 1px solid #333333;
 }
 
-#news dd{
+#news dd {
     padding: 15px 0px 15px 30px;
     white-space: nowrap;
     overflow: hidden;
@@ -138,39 +132,39 @@ main
 
 /*---products---*/
 
-.products{
+.products {
     width: 65%;
 }
 
 .productsTitleContents {
     display: flex;
     flex-direction: row;
-    gap:18px;
+    gap: 18px;
 }
 
-.productsTitle{
+.productsTitle {
     font-size: 32px;
 }
 
-.productsSubtitle{
+.productsSubtitle {
     font-size: 14px;
     margin: 0 auto;
 }
 
-.productsImageContents{
+.productsImageContents {
     padding-top: 100px;
     width: 100%;
     position: relative;
 }
 
-.productsImageContents img{
+.productsImageContents img {
     width: 100%;
 }
 
-.productsImageContents p{
+.productsImageContents p {
     position: absolute;
     bottom: -20px;
-    writing-mode:horizontal-tb;
+    writing-mode: horizontal-tb;
     font-size: 16px;
     color: #ffffff;
     text-align: center;
@@ -178,26 +172,26 @@ main
     width: 56%;
 }
 
-#products1 .productsTitleContents{
+#products1 .productsTitleContents {
     padding-left: 20px;
 }
 
-#products1 .productsImageContents p{
+#products1 .productsImageContents p {
     left: -20px;
     background-color: #F9E90660;
 }
 
-#products2{
+#products2 {
     display: flex;
     flex-direction: column-reverse;
     margin-right: auto;
 }
 
-#products2 .productsTitleContents{
+#products2 .productsTitleContents {
     padding-right: 20px;
 }
 
-#products2 .productsImageContents p{
+#products2 .productsImageContents p {
     right: -20px;
     background-color: #952A2660;
 }
@@ -205,7 +199,7 @@ main
 /*-------------------------------------------
 footer
 -------------------------------------------*/
-#footer{
+#footer {
     background-color: #000000;
     color: #ffffff;
     font-size: 14px;
@@ -224,7 +218,7 @@ footer
     margin: 0 auto;
 }
 
-.footerContents{
+.footerContents {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -232,17 +226,27 @@ footer
     width: 100%;
 }
 
-.address{
+.address {
     margin: 0 60px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.navigationLinks{
+.navigationLinks {
     font-size: 16px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 
+}
+
+/*-------------------------------------------
+レスポンシブ対応
+-------------------------------------------*/
+@media screen and (max-width:768px) {
+
+    #header {
+        background-image: url("../images/mainvisual-sp.jpg");
+    }
 }
