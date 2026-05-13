@@ -249,4 +249,13 @@ footer
     #header {
         background-image: url("../images/mainvisual-sp.jpg");
     }
+
+    .newsList dt:nth-of-type(n + 4),
+    .newsList dd:nth-of-type(n + 4) {
+        display: none;
+    }
+
+    .productsSubtitle{
+        display: none;
+    }
 }
