@@ -196,6 +196,20 @@ main
     background-color: #952A2660;
 }
 
+
+/*---map---*/
+
+#map{
+    width: 100%;
+}
+
+#map iframe{
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
 /*-------------------------------------------
 footer
 -------------------------------------------*/
